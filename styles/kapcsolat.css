@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+
+body
+{
+    background: linear-gradient(-45deg, #2C2828, #3B2C85, #219897, #85CFCB, #C147E9);
+    background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+	margin: 0;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+a:hover{
+	-webkit-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	-webkit-transform-origin: left;
+	-moz-transform-origin: left;
+	-o-transform-origin: left;
+	transform-origin: left;
+}
+
+
+nav{
+	background: rgba(239, 232, 232, 0.08);
+	box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+	backdrop-filter: blur(4.2px);
+	-webkit-backdrop-filter: blur(4.2px);
+	font-family: 'Tilt Neon', cursive;
+}
+
+h1 {
+    font-family: 'Tilt Neon', cursive;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+.txt {
+    font-family: 'Tilt Neon', cursive;
+    font-size: 3rem;
+    text-align: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+}
+
+.first {
+    font-family: 'Tilt Neon', cursive;
+    padding-top: 8rem;
+}
+
+.last {
+	padding-bottom: 8rem;
+}
+
+.platform {
+    font-family: 'Tilt Neon', cursive;
+    font-size: 3rem;
+	text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.blob {
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.95);
+	
+	}
+
+	70% {
+		transform: scale(1);
+		
+	}
+
+	100% {
+		transform: scale(0.95);
+		
+	}
+}
